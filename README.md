@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Employee Management System
 
-## Getting Started
+Este projeto é um sistema de cadastro de funcionários desenvolvido com **React**, **TypeScript**, **Next.js** e **SCSS**. O sistema permite adicionar e remover funcionários, além de listar todos os funcionários cadastrados.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Next.js**: Framework React que possibilita renderização no lado do servidor (SSR) e geração de sites estáticos (SSG).
+- **SCSS**: Extensão do CSS que permite o uso de variáveis, aninhamento, mixins, etc.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Cadastro de Funcionários**: Adiciona novos funcionários com nome, cargo e email.
+- **Listagem de Funcionários**: Exibe todos os funcionários cadastrados em um layout amigável.
+- **Responsividade**: O sistema é responsivo e se adapta a diferentes tamanhos de tela.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Requisitos
 
-## Learn More
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
-To learn more about Next.js, take a look at the following resources:
+## Componentes
+1. **EmployeeForm.tsx**
+Componente responsável pelo formulário de cadastro de funcionários.
+Recebe a função onAddEmployee como prop, que adiciona um novo funcionário à lista.
+2. **EmployeeList.tsx**
+Exibe a lista de funcionários cadastrados.
+Recebe a lista de funcionários como prop e a função onRemoveEmployee para remover um funcionário.
+3. **EmployeeCard.tsx**
+Exibe os dados de um funcionário individual.
+Possui um botão para remover o funcionário, chamando a função onRemove passada via props.
+4. **Layout.tsx**
+Componente de layout geral que envolve a página principal, utilizando o atributo children para renderizar o conteúdo.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
