@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header, .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .main {
+      padding: 1rem;
+    }
+    
+    .header, .footer {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+  }
+  
+  .inputModls {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .buttonModels {
+    padding: 0.75rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+
+    .form{
+      width: 100%;
+    }
+
+    .inputModls, .buttonModels {
+      font-size: 14px;
+    }
+  
+    .buttonModels {
+      padding: 0.5rem;
+    }
+  }
+  

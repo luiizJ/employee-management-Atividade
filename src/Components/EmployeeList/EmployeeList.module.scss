@@ -1,0 +1,14 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
